@@ -21,7 +21,7 @@ class SplashViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
             let loginViewController = LoginViewController()
             self.present(loginViewController, animated: true, completion: nil)
         }

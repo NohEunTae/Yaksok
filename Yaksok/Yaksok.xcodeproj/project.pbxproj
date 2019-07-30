@@ -11,6 +11,8 @@
 		CE2372B622F0310600085796 /* SplashViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE2372B422F0310600085796 /* SplashViewController.xib */; };
 		CE2372BF22F037F900085796 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2372BD22F037F900085796 /* LoginViewController.swift */; };
 		CE2372C022F037F900085796 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE2372BE22F037F900085796 /* LoginViewController.xib */; };
+		CE2372C922F07B3500085796 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2372C822F07B3500085796 /* UIViewController+Extension.swift */; };
+		CE2372CC22F0937900085796 /* AppUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2372CB22F0937900085796 /* AppUtility.swift */; };
 		CEB1AFAE22EF4FAD005CA32F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB1AFAD22EF4FAD005CA32F /* AppDelegate.swift */; };
 		CEB1AFB522EF4FAE005CA32F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEB1AFB422EF4FAE005CA32F /* Assets.xcassets */; };
 		CEB1AFB822EF4FAE005CA32F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEB1AFB622EF4FAE005CA32F /* LaunchScreen.storyboard */; };
@@ -21,6 +23,8 @@
 		CE2372B422F0310600085796 /* SplashViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SplashViewController.xib; sourceTree = "<group>"; };
 		CE2372BD22F037F900085796 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		CE2372BE22F037F900085796 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		CE2372C822F07B3500085796 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		CE2372CB22F0937900085796 /* AppUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUtility.swift; sourceTree = "<group>"; };
 		CEB1AFAA22EF4FAD005CA32F /* Yaksok.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Yaksok.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEB1AFAD22EF4FAD005CA32F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CEB1AFB422EF4FAE005CA32F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -58,12 +62,13 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
-		CE2372B722F0355400085796 /* Join */ = {
+		CE2372B722F0355400085796 /* Login */ = {
 			isa = PBXGroup;
 			children = (
 				CE2372B822F0355900085796 /* View */,
+				CE2372CA22F07BCC00085796 /* Join */,
 			);
-			path = Join;
+			path = Login;
 			sourceTree = "<group>";
 		};
 		CE2372B822F0355900085796 /* View */ = {
@@ -73,6 +78,22 @@
 				CE2372BE22F037F900085796 /* LoginViewController.xib */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		CE2372C722F07AF300085796 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				CE2372C822F07B3500085796 /* UIViewController+Extension.swift */,
+				CE2372CB22F0937900085796 /* AppUtility.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		CE2372CA22F07BCC00085796 /* Join */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Join;
 			sourceTree = "<group>";
 		};
 		CEB1AFA122EF4FAD005CA32F = {
@@ -94,7 +115,8 @@
 		CEB1AFAC22EF4FAD005CA32F /* Yaksok */ = {
 			isa = PBXGroup;
 			children = (
-				CE2372B722F0355400085796 /* Join */,
+				CE2372C722F07AF300085796 /* Utilities */,
+				CE2372B722F0355400085796 /* Login */,
 				CE2372B122F0303B00085796 /* Splash */,
 				CE2372B222F0309200085796 /* Resources */,
 				CEB1AFAD22EF4FAD005CA32F /* AppDelegate.swift */,
@@ -174,7 +196,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE2372C922F07B3500085796 /* UIViewController+Extension.swift in Sources */,
 				CE2372BF22F037F900085796 /* LoginViewController.swift in Sources */,
+				CE2372CC22F0937900085796 /* AppUtility.swift in Sources */,
 				CEB1AFAE22EF4FAD005CA32F /* AppDelegate.swift in Sources */,
 				CE2372B522F0310600085796 /* SplashViewController.swift in Sources */,
 			);
