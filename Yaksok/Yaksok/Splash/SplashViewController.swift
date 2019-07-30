@@ -22,8 +22,8 @@ class SplashViewController: UIViewController {
         super.viewDidLoad()
         
         DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
-            let joinViewController = JoinViewController()
-            self.present(joinViewController, animated: true, completion: nil)
+            let loginViewController = LoginViewController()
+            self.present(loginViewController, animated: true, completion: nil)
         }
     }
 }

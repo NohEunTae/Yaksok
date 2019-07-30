@@ -1,5 +1,5 @@
 //
-//  JoinViewController.swift
+//  LoginViewController.swift
 //  Yaksok
 //
 //  Created by user on 30/07/2019.
@@ -8,10 +8,10 @@
 
 import UIKit
 
-class JoinViewController: UIViewController {
+class LoginViewController: UIViewController {
 
     init() {
-        super.init(nibName: "JoinViewController", bundle: nil)
+        super.init(nibName: "LoginViewController", bundle: nil)
     }
     
     required init?(coder aDecoder: NSCoder) {
